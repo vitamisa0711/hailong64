@@ -2,33 +2,41 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Gửi anh ❤️</title>
+  <title>ỐI BẤT NGỜ CHƯA NEK</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="overlay"></div>
-
 <div class="container">
-  <h1 class="title">Hey anh 💖</h1>
+  <h1 class="title">Helluuu Phạm Hải Long</h1>
 
-  <div class="gift-box" onclick="openGift()">
-    🎁
-  </div>
+  <div class="gift-box" onclick="openGift()">🎁</div>
 
   <div id="content" class="hidden">
-    <h2>Em có điều muốn nói 💌</h2>
+
+    <!-- slideshow -->
+    <div class="slideshow">
+      <img class="slide active" src="anh1.jpg">
+      <img class="slide" src="anh2.jpg">
+      <img class="slide" src="anh3.jpg">
+    </div>
+
+    <p id="caption"></p>
+
     <p id="text"></p>
-    <button onclick="showLove()">Bấm vào đây nè 😆</button>
+
+    <button onclick="showLove()">Bấm vào đêyy</button>
   </div>
 
   <div id="love" class="hidden">
-    <h1 class="love-text">I LOVE YOU ❤️</h1>
+    <h1 class="love-text">I LOVE YOUUU</h1>
+    <p class="from">From: Mixa Chần</p>
   </div>
+
 </div>
 
 <audio id="music" loop>
-  <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3">
+  <source src="music.mp3" type="audio/mpeg">
 </audio>
 
 <script src="script.js"></script>
