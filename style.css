@@ -86,7 +86,10 @@ body {
   white-space: pre-line;
   margin-top: 10px;
   line-height: 1.8;
-  font-size: 18px; /* 👈 to hơn */
+  font-size: 18px;
+
+  word-break: keep-all;   /* 👈 KHÔNG cho bẻ chữ */
+  overflow-wrap: normal;  /* 👈 chỉ xuống dòng khi cần */
 }
 
 /* 💥 chữ rung */
