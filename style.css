@@ -123,3 +123,18 @@ body {
   0% {transform: translateY(100vh);}
   100% {transform: translateY(-10vh);}
 }
+
+.message-box {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
