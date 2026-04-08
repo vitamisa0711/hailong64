@@ -82,13 +82,14 @@ body {
 #text {
   white-space: pre-line;
   margin-top: 15px;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 /* 💥 chữ rung */
 .shake {
   display: inline-block;
-  animation: shake 0.3s infinite;
+  animation: shake 0.5s infinite;
+  white-space: pre; /* 👈 thêm dòng này */
 }
 
 @keyframes shake {
