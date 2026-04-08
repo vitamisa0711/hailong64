@@ -81,8 +81,9 @@ body {
 /* 💌 text */
 #text {
   white-space: pre-line;
-  margin-top: 15px;
+  margin-top: 10px;
   line-height: 1.8;
+  font-size: 18px; /* 👈 to hơn */
 }
 
 /* 💥 chữ rung */
@@ -125,7 +126,22 @@ body {
 }
 
 .message-box {
-  animation: fadeIn 1s ease;
+  background: white;
+  color: #ff4d6d;
+
+  padding: 25px 30px;      /* 👈 to hơn */
+  border-radius: 25px;
+
+  width: 90%;              /* 👈 rộng hơn */
+  max-width: 400px;
+
+  margin: 30px auto;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+  text-align: center;
+
+  animation: fadeIn 1.2s ease;
 }
 
 @keyframes fadeIn {
