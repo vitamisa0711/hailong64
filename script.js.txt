@@ -1,0 +1,26 @@
+const text = "Cảm ơn anh vì đã đến bên em 💕\n" +
+             "Mong rằng chúng ta sẽ luôn bên nhau thật lâu nhé!\n" +
+             "Anh là người tuyệt vời nhất với em 💖";
+
+let i = 0;
+
+function openGift() {
+  document.querySelector(".gift-box").style.display = "none";
+  document.getElementById("content").classList.remove("hidden");
+
+  document.getElementById("music").play();
+
+  typeWriter();
+}
+
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("text").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 50);
+  }
+}
+
+function showLove() {
+  document.getElementById("love").classList.remove("hidden");
+}
