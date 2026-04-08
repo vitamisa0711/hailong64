@@ -32,13 +32,19 @@ function openGift() {
 }
 
 /* 💌 chữ rung */
+let textArray = Array.from(text);
+
 function typeWriter() {
-  if (i < text.length) {
-    let char = text.charAt(i);
+  if (i < textArray.length) {
+    let char = textArray[i];
 
     if (char === "\n") {
       document.getElementById("text").innerHTML += "<br>";
-    } else {
+    } 
+    else if (char === " ") {
+      document.getElementById("text").innerHTML += " ";
+    }
+    else {
       document.getElementById("text").innerHTML += 
         "<span class='shake'>" + char + "</span>";
     }
