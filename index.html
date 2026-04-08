@@ -2,21 +2,23 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>ỐI BẤT NGỜ CHƯA NEK</title>
+  <title>PHẠM HẢI LONG LÀ ĐỈNH NHẤT</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-  <h1 class="title">Helluuu Phạm Hải Long 💖</h1>
+<!-- 🎁 MÀN ĐẦU -->
+<div id="intro">
+  <div class="gift-box">🎁</div>
+  <button onclick="openGift()">Mở quà ở đêyyy</button>
+</div>
 
-  <div class="gift-box" onclick="openGift()">🎁</div>
-
-  <!-- content (ẩn sẵn) -->
-  <div id="content" class="hidden">
+<!-- 💌 NỘI DUNG -->
+<div id="content">
+  <div class="container">
 
     <div class="slideshow">
-      <img class="slide active" src="anh00.png">
+      <img class="slide" src="anh00.png">
       <img class="slide" src="anh2010.jpeg">
       <img class="slide" src="anh2012.jpeg">
       <img class="slide" src="anh1.jpeg">
@@ -36,15 +38,13 @@
     <p id="caption"></p>
     <p id="text"></p>
 
-    <button onclick="showLove()">Bấm vào đêyy 😆</button>
   </div>
+</div>
 
-  <!-- phần cuối -->
-  <div id="love" class="hidden">
-    <h1 class="love-text">I LOVE YOUUU ❤️</h1>
-    <p class="from">From: Mixa Chần 💕</p>
-  </div>
-
+<!-- ❤️ -->
+<div id="love">
+  <h1 class="love-text">EM YÊU ANH LÉM</h1>
+  <p class="from">From: Mixa Chần 💕</p>
 </div>
 
 <audio id="music" loop>
