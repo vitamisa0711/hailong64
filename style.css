@@ -28,8 +28,11 @@ body {
 }
 
 /* 💥 bung quà */
-.gift-box.open {
-  animation: pop 0.6s ease forwards;
+.gift-box {
+  font-size: clamp(120px, 25vw, 250px); /* 👈 auto đẹp mọi màn hình */
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 20px;
 }
 
 @keyframes pop {
@@ -153,4 +156,20 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+#intro button {
+  font-size: clamp(18px, 4vw, 28px); /* 👈 tự scale */
+  padding: 15px 35px;
+
+  border-radius: 40px;
+  border: none;
+
+  background: white;
+  color: #ff4d6d;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
